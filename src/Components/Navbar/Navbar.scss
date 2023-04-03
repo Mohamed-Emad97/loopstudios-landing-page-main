@@ -1,0 +1,57 @@
+//Import Files
+@use "../../Sass/Variblies.scss" as *;
+
+//Rules
+header{
+    background-color: transparent;
+    z-index: 10000;
+    nav{
+        ul{
+            li{
+                a{
+                    font-size: 1.25rem !important;
+                    transition: all 1s;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 2px;
+                        background-color: $White;
+                        transition: width 0.3s ease;
+                    }
+                    
+                    &:hover::before {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scrolled{
+    background-color: $Black;
+}
+
+@media (max-width: 992px) {
+    header{
+        z-index: 10000;
+        nav{
+            ul{
+                margin-top: 50px;
+                li{
+                    a{
+                        font-size: 1.25rem !important;
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@use "../../Sass/Variblies.scss" as *;
+
+//Rules 
+footer{
+    background-color: $Black;
+    .footerLinks{
+        ul{
+            li{
+                a{
+                    color: $White !important;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    transition: all 1s;
+                    &:hover{
+                        color: $Dark-Gray !important;
+                    }
+                }
+            }
+        }
+        .txt{
+            color: $Dark-Gray;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+//Import Files
+@use "./Sass/Variblies.scss" as *;
+
+//Navbar File
+@use "./Components/Navbar/Navbar.scss" as *;
+
+//Langing File
+@use "./Components/Landing/Landing.scss" as *;
+
+//About File
+@use "./Components/About/About.scss" as *;
+
+//Gallery File
+@use "./Components/Gallery/Gallery.scss" as *;
+
+//Footer File
+@use "./Components/Footer/Footer.scss" as *;
+
+
+//Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+//Rules
+body{
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+$socials: ("facebook": #1877f2, "twitter": #1da1f2, "dribble": #9ba5a8, "google": #dd4b39, "github": #333,"instagram": #e1306c, "linkedin": #313335, "pinterest": #e60023, "youtube": #ff0000);
+
+@each $name, $color in $socials {
+    .#{$name}{
+        cursor: pointer;
+        transition: all 1s;
+    }
+    .#{$name}:hover{
+        color: $color !important;
+    }
+}

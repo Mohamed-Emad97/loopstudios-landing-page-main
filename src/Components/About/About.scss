@@ -1,0 +1,36 @@
+@use "../../Sass/Variblies.scss" as *;
+
+
+//Rules
+#about{
+    background-color: $White;
+    .caption{
+        position: absolute;
+        left: auto;
+        top: auto;
+        bottom: 0;
+        right: -5%;
+        background-color: $White;
+        h2{
+            font-weight: 700;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #about{
+        .img{
+            img{
+                width: 100% !important;
+            }
+        }
+        .caption{
+            position: relative;
+            left: auto;
+            top: auto;
+            bottom: auto;
+            right: auto;
+            width: 100% !important;
+        }
+    }
+}

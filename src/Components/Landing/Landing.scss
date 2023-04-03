@@ -1,0 +1,30 @@
+//Import Files
+@use "../../Sass/Variblies.scss" as *;
+
+//Rules
+#home{
+    background-image: url(./assets/images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    .caption{ 
+        border: 2px solid $White;
+        h1{
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 5px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #home{
+        background-image: url(./assets/images/mobile/image-hero.jpg);
+        .caption{
+            h1{
+                font-size: 2rem;
+                letter-spacing: 1.25px;
+            }
+        }
+    }
+}

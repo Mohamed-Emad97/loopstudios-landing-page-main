@@ -1,0 +1,33 @@
+@use "../../Sass/Variblies.scss" as *;
+
+//Rules
+#gallery{
+    .title{
+        h2{
+            font-weight: 700;
+        }
+        .btnMain{
+            border: 1px solid $Black;
+            color: $Black;
+            font-size: 20px;
+            width: 200px;
+            transition: all 1s;
+            &:hover{
+                color: $White;
+                background-color: $Black;
+            }
+        }
+    }
+    .poster{
+        .overlay{
+            position: absolute;
+            bottom: 0;
+            color: $White;
+            h2{
+                font-size: 40px;
+                cursor: pointer;
+                font-weight: 700;
+            }
+        }
+    }
+}
